@@ -1,4 +1,5 @@
 package d_20_05_2022;
+
 //1.Kreirati klasu FacebookPost koja ima:
 //   Od atributa:
 //ime i prezime korisnika koji je objavio post
@@ -25,7 +26,31 @@ package d_20_05_2022;
 //Milan Jovanovic >>> Pera Peric
 //Ovo je tekst objave
 //Likes 3 | Shares 1
-public class FacebookPost {
-    FacebookPost n = new FacebookPost();
-    m.
+public class FacebookPostMain {
+    public static void main(String[] args) {
+        FacebookPost m = new FacebookPost(12 , 17);
+        m.getImeIPrezimeKoJeObjavio();
+        m.setImeIPrezimeKoJeObjavio("Marija Colovic");
+        m.getImeIPrezimeKodKoga();
+        m.setImeIPrezimeKodKoga("Milica Ilic");
+        m.getTekstObjave();
+        m.setTekstObjave("Cao");
+        m.like();
+        m.share();
+        m.print();
+
+        System.out.println();
+        FacebookPost n = new FacebookPost(9,10);
+        n.getImeIPrezimeKoJeObjavio();
+        n.setImeIPrezimeKoJeObjavio("Milena Maric");
+        n.getImeIPrezimeKodKoga();
+        n.setImeIPrezimeKodKoga("Jovana Ilic");
+        n.getTekstObjave();
+        n.setTekstObjave("Cao");
+        n.like();
+        n.share();
+        n.print();
+
+
+    }
 }
