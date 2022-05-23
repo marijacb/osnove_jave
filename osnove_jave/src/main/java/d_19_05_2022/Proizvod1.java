@@ -18,34 +18,38 @@ package d_19_05_2022;
 //za tezinu od 101g do 500g, postarina iznosi 400din
 //za tezinu preko 500g, postarina iznosi 1000din
 //U glavnom programu kreirati minimum 2 proizvoda i za svaki od njih pozvati svaku od definisanih funkcija.
-public class Proizvod {
+public class Proizvod1 {
     public String naziv;
     public double cena;
     public double tezinaG;
-    public void Stampaj(){
-        System.out.println("Naziv proizvoda je " + naziv + "cija je " +cena + " i tezina " + tezinaG);
+
+    public void stampaj(){
+        System.out.println("Naziv proizvoda je " + naziv + " cija je " +cena + " i tezina " + tezinaG);
     }
-//    public void PovecajCenu(double povecanjeCene){
-//        povecanjeCene = this.cena + povecanjeCene;
-//        System.out.println("Naziv proizvoda je " + naziv + "cija je " +cena + " i tezina " + tezinaG);
-//    }
-//    public double CenaSaPopustom ( double popust){
-//        if (popust> 0 && popust<100){
-//        popust = cena - (cena  * popust)/100;
-//        return  popust;
-//    }}
-//    public int Postarina(int postarina){
-//        if (this.tezinaG>= 100){
-//            int postarina==200;
-//        }
-//        else if (this.tezinaG>=101 && this.tezinaG<=500){
-//            int postarina == 400;
-//        }
-//        else if (this.tezinaG>500){
-//           int postarina == 1000;
-//        }
-//        return postarina;
-//    }
+    public void povecajCenu(double povecanjeCene){
+        povecanjeCene = this.cena + povecanjeCene;
+        System.out.println("Naziv proizvoda je " + naziv + " cija je " +cena + " i tezina " + tezinaG);
+    }
+    public void cenaSaPopustom ( double popust) {
+        if (popust > 0 && popust < 100) {
+         popust = this.cena * popust / 100;
+
+        }
+    }
+
+    public int racunajPostarinu(){
+        int postarina=0;
+        if (this.tezinaG>= 100){
+            postarina=200;
+        }
+        else if (this.tezinaG>=101 && this.tezinaG<=500){
+            postarina =400;
+        }
+        else if (this.tezinaG>500){
+           postarina = 1000;
+        }
+        return postarina;
+    }
 
 
 }
