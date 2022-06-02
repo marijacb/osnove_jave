@@ -1,4 +1,4 @@
-package d_13_05_2022;
+package d_30_05_2022.d_13_05_2022;
 
 import java.util.ArrayList;
 import java.util.Scanner;
