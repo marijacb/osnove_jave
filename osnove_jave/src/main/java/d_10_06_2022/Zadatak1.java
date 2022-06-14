@@ -1,4 +1,4 @@
-package p_10_06_2022;
+package d_10_06_2022;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
